@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 @RestController
 @AllArgsConstructor
 @Slf4j
-@RequestMapping("/customers/commands")
+@RequestMapping("/radars/commands")
 public class RadarCommandController {
     private CommandGateway commandGateway;
     private EventStore eventStore;

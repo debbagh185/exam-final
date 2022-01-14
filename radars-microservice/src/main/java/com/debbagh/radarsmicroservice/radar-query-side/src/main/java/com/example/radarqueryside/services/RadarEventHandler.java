@@ -19,7 +19,7 @@ public class RadarEventHandler {
     @EventHandler
     public void on(RadarCreatedEvent event){
         log.info("RadarCreatedEvent received.");
-        Radar customer =  new Radar(event.getId(), event.getVitesseMax(), event.getLatitude(), event.getLongitude());
-        radarRepository.save(customer);
+        Radar radar =  new Radar(event.getId(), event.getVitesseMax(), event.getLatitude(), event.getLongitude());
+        radarRepository.save(radar);
     }
 }
